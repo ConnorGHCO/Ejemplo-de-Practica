@@ -1,19 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ejemplo de Práctica — Demo</title>
+    <meta name="description" content="Demo de página estática con CSS y JS: tema claro/oscuro, layout responsive y pequeñas interacciones">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header><h1>Hola Tilines</h1></header>
+    <header class="site-header">
+        <div class="container header-row">
+            <h1 class="brand">Ejemplo de Práctica</h1>
+            <nav class="nav">
+                <a href="#features">Tilines</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+            <div class="controls">
+                <button id="themeToggle" class="btn small">Tema</button>
+            </div>
+        </div>
+    </header>
 
-    <p> Top tres Tilines que son mas tilinezcos de todo el tilino verso</p>
-    <ul>
-        <li>Eso Tilin</li>
-        <li>El pepe</li>
-        <li>Momazoz pablo</li>
-    </ul>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Bienvenido al demo</h2>
+                <p class="lead">Una plantilla simple con estilos modernos, modo oscuro y pequeñas interacciones en JavaScript.</p>
+                <a href="#features" class="btn">Ver Tilines</a>
+            </div>
+        </section>
 
+        <section id="features" class="container features">
+            <h3>Top 3 Tilines</h3>
+            <p class="muted">Los tilines más tilinezcos del tilino verso. Haz clic en un card para más información.</p>
+
+            <div class="grid">
+                <article class="card" data-name="Eso Tilin">
+                    <h4>Eso Tilin</h4>
+                    <p class="small">El tilín clásico: discreto y con estilo.</p>
+                    <button class="btn outline btn-open">Más</button>
+                </article>
+
+                <article class="card" data-name="El Pepe">
+                    <h4>El Pepe</h4>
+                    <p class="small">Un tilín con mucha personalidad y carisma.</p>
+                    <button class="btn outline btn-open">Más</button>
+                </article>
+
+                <article class="card" data-name="Momazoz Pablo">
+                    <h4>Momazoz Pablo</h4>
+                    <p class="small">El más creativo, siempre sorprende.</p>
+                    <button class="btn outline btn-open">Más</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="container contact">
+            <h3>Contacto</h3>
+            <form id="contactForm" class="form">
+                <label>Nombre <input name="name" required></label>
+                <label>Email <input name="email" type="email" required></label>
+                <label>Mensaje <textarea name="message" rows="4" required></textarea></label>
+                <div class="form-row">
+                    <button type="submit" class="btn">Enviar</button>
+                    <span id="formMsg" class="muted"></span>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>© 2025 Ejemplo de Práctica — Demo.</small>
+        </div>
+    </footer>
+
+    <!-- Modal sencillo -->
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-panel">
+            <button id="modalClose" class="modal-close" aria-label="Cerrar">✕</button>
+            <h4 id="modalTitle"></h4>
+            <p id="modalBody"></p>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
