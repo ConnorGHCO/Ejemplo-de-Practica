@@ -171,7 +171,6 @@ header {
 .sections {
   background-color: var(--bg);
   width: 100%;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -306,6 +305,7 @@ header {
 
 .service-content {
   width: 100%;
+  padding: 0;
   padding-top: 3rem;
   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/bg3.jpg);
   background-size: cover;
