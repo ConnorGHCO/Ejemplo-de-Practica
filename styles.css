@@ -171,11 +171,11 @@ header {
 .sections {
   background-color: var(--bg);
   width: 100%;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 1rem;
 }
 
 .sections-content {
