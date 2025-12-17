@@ -1,89 +1,186 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Ejemplo de Práctica — Demo</title>
-    <meta name="description" content="Demo de página estática con CSS y JS: tema claro/oscuro, layout responsive y pequeñas interacciones">
+    <!-- Meta básicos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Meta descripción y palabras clave -->
+    <meta name="description" content="Biomedica Multiservicios ofrece soluciones integrales de salud y servicios biomédicos de calidad. Contáctanos para más información.">
+    <meta name="keywords" content="biomedica, servicios medicos, multiservicios, salud, diagnostico de equipo, mantenimiento, revision de equipos medicos">
+    
+    <!-- Meta autor y copyright 
+    <meta name="author" content="Biomedica Multiservicios">
+    <meta name="copyright" content="© 2025 Biomedica Multiservicios. Todos los derechos reservados."> -->
+    
+    <!-- Open Graph (redes sociales) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Biomedica Multiservicios">
+    <meta property="og:description" content="Biomedica Multiservicios ofrece soluciones integrales de salud y servicios biomédicos de calidad.">
+    <meta property="og:url" content="https://biomedica.multiserviciosia.com">
+    <meta property="og:image" content="https://biomedica.multiserviciosia.com/img/logo.ico">
+    <meta property="og:site_name" content="Biomedica Multiservicios">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Biomedica Multiservicios">
+    <meta name="twitter:description" content="Biomedica Multiservicios ofrece soluciones integrales de salud y servicios biomédicos de calidad.">
+    <meta name="twitter:image" content="https://biomedica.multiserviciosia.com/img/logo.ico">
+    
+    <!-- SEO adicional -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="spanish">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Canonical (importante para evitar duplicados) -->
+    <link rel="canonical" href="https://biomedica.multiserviciosia.com">
+    
+    <!-- Favicons y tema -->
+    <link rel="icon" type="image/x-icon" href="https://biomedica.multiserviciosia.com/img/logo.ico">
+    <link rel="apple-touch-icon" href="https://biomedica.multiserviciosia.com/img/logo.ico">
+    <meta name="theme-color" content="#2563eb">
+    
+    <title>Biomedica Multiservicios - Soluciones de Salud Integral</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="site-header">
-        <div class="container header-row">
-            <h1 class="brand">Ejemplo de Práctica</h1>
-            <nav class="nav">
-                <a href="#features">Tilines</a>
-                <a href="#contact">Contacto</a>
-            </nav>
-            <div class="controls">
-                <button id="themeToggle" class="btn small">Tema</button>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo">
+                <h1>Biomedica Multiservicios</h1>
             </div>
+            <hr>
+            <h2>Soluciones de Salud Integral y Servicios Biomédicos de Calidad para tu Empresa</h2>
+            <p> Soluciones de mantenimiento inteligentes y sostenibles para el cuidado de la salud, enfocados en brindarte soluciones integrales para el sector salud, consolidandonos como un socio estrategico</p>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h2>Bienvenido al demo</h2>
-                <p class="lead">Una plantilla simple con estilos modernos, modo oscuro y pequeñas interacciones en JavaScript.</p>
-                <a href="#features" class="btn">Ver Tilines</a>
+    <section class="sections">
+        <nav class="navbar">
+            <div class="navstyle">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicio Técnico</a></li>
+                    <li><a href="#">Venta de Equipos</a></li>
+                    <li><a href="#">Asesoria Contable</a></li>
+                </ul>
             </div>
-        </section>
+        </nav>
 
-        <section id="features" class="container features">
-            <h3>Top 3 Tilines</h3>
-            <p class="muted">Los tilines más tilinezcos del tilino verso. Haz clic en un card para más información.</p>
-
-            <div class="grid">
-                <article class="card" data-name="Eso Tilin">
-                    <h4>Eso Tilin</h4>
-                    <p class="small">El tilín clásico: discreto y con estilo.</p>
-                    <button class="btn outline btn-open">Más</button>
-                </article>
-
-                <article class="card" data-name="El Pepe">
-                    <h4>El Pepe</h4>
-                    <p class="small">Un tilín con mucha personalidad y carisma.</p>
-                    <button class="btn outline btn-open">Más</button>
-                </article>
-
-                <article class="card" data-name="Momazoz Pablo">
-                    <h4>Momazoz Pablo</h4>
-                    <p class="small">El más creativo, siempre sorprende.</p>
-                    <button class="btn outline btn-open">Más</button>
-                </article>
-            </div>
-        </section>
-
-        <section id="contact" class="container contact">
-            <h3>Contacto</h3>
-            <form id="contactForm" class="form">
-                <label>Nombre <input name="name" required></label>
-                <label>Email <input name="email" type="email" required></label>
-                <label>Mensaje <textarea name="message" rows="4" required></textarea></label>
-                <div class="form-row">
-                    <button type="submit" class="btn">Enviar</button>
-                    <span id="formMsg" class="muted"></span>
+        <div class="sections-content"> 
+            <h2>Reparación, venta, capacitación, mantenimiento y calibración de equipo médico</h2>
+            <p class="txt-p">
+                Enfocados en brindar soluciones integrales para el sector salud, consolidándose como un socio estratégico.
+            </p>
+            <div class="multiservicios-group">
+                <div class="multiservicios-1 back1">
+                    <h3>Capacitados</h3>
+                    <p>Contamos con la infraestructura, el personal calificado y los recursos necesarios para ofrecer los mejores servicios en todas nuestras areas de especializacion, para alcanzar y superar tus espectativas.</p>
                 </div>
-            </form>
+                <div class="multiservicios-1 back2">
+                    <h3>Enfocados</h3>
+                    <p>Reparación, venta, capacitación, mantenimiento y calibración de equipo médico, odontológico, de diagnóstico, terapéutico, de protección personal (EPP), de asistencia, de laboratorio y de diagnóstico en general</p>
+                </div>
+                <div class="multiservicios-1 back3">
+                    <h3>Preparados</h3>
+                    <p>Experimenta la atención de servicio y experiencia con soluciones reales en el sector salud, ofrecemos consultoría especializada en gestión de proyectos para el sector salud.</p>
+                </div>
+            </div>
+        </div>
+        
+        <main>
+            <div class="service-content">
+                <h1>Servicios Biomedicos</h1>
+                <div class="service-card">
+                    <h3>mantenimiento</h3>
+                    <img src="" alt="">
+                    <p>Servicios de mantenimiento preventivo y correctivo para equipos médico-electrónicos, asegurando su óptimo funcionamiento bajo cualquier circunstancia.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Comercializacion</h3>
+                    <img src="" alt="">
+                    <p>Venta de equipos médicos, refacciones, consumibles y accesorios, ofreciendo una amplia gama de opciones para cubrir las necesidades de instituciones de salud.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Asesoramiento</h3>
+                    <img src="" alt="">
+                    <p>Diseño e implementación de programas de conservación para la infraestructura médica (equipos e
+                        instalaciones), tanto en instituciones públicas como privadas.</p>
+                </div>
+                <div class="service-card card-last"> 
+                    <h1>Una serie de Recursos</h1>
+                    <p>Destinados a optimizar el rendimiento y la vida útil de tus equipos médicos y de laboratorio, a través de servicios especializados de reparación, mantenimiento y calibración.</p>
+                </div>
+            </div>
+        </main>
+        <section class="general-section">
+            <div class="general-txt left">
+                <h2>Asegurar la exactitud y precisión de tus equipos.</h2>
+                <ul>
+                    <li>Fiabilidad en los resultados.</li>
+                    <li>Seguridad del paciente.</li>
+                    <li>Cumplimiento de normas.</li>
+                </ul>
+            </div>
+            <div class="general-img right"><img src="" alt=""></div>
+            <div class="general-txt right">
+                <h2>Optimizar el rendimiento y la vida útil de tus equipos</h2>
+                <ul>
+                    <li>Prevención de fallas.</li>
+                    <li>Mantenimiento proactivo.</li>
+                    <li>Ahorro de costos.   </li>
+                </ul>
+            </div>
+            <div class="general-img left"><img src="" alt=""></div>
         </section>
-    </main>
 
-    <footer class="site-footer">
-        <div class="container">
-            <small>© 2025 Ejemplo de Práctica — Demo.</small>
+        <section class="phrase">
+            
+            <div class="principal ph">
+                <h3></h3>
+                <div class="phrase-benjamin">
+                    <h4>Benjamin Franklin (1706-1790)</h4>
+                    <p>Científico, político, inventor, impresor y escritor estadounidense, considerado uno de los PadresFundadores de los Estados Unidos</p>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="links">
+                <h3>Acerca de</h3>
+                <ul>
+                    <li><a href="">Equipo</a></li>
+                    <li><a href="">Historia</a></li>
+                    <li><a href="">Carrera</a></li>
+                </ul>
+            </div>
+             <div class="links">
+                <h3>Privacidad</h3>
+                <ul>
+                    <li><a href="">Politica de privacidad</a></li>
+                    <li><a href="">Terminos y Condiciones</a></li>
+                    <li><a href="mailto: biomedica@multiserviciosia.com">Contacta con nosotros</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>Social</h3>
+                <ul>
+                    <li><a href="https://wa.me/525528650603?text=Hola,%20quiero%20contactarte" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Intagram</a></li>
+                    <li><a href="">Twitter/X</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
-
-    <!-- Modal sencillo -->
-    <div id="modal" class="modal" aria-hidden="true">
-        <div class="modal-panel">
-            <button id="modalClose" class="modal-close" aria-label="Cerrar">✕</button>
-            <h4 id="modalTitle"></h4>
-            <p id="modalBody"></p>
-        </div>
-    </div>
-
-    <script src="script.js" defer></script>
+ 
 </body>
 </html>
