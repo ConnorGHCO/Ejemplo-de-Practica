@@ -1,0 +1,28 @@
+{
+    "wagons": [
+        {
+            "title": "Soluciones de Salud Integral",
+            "subtitle": "Soluciones de mantenimiento inteligentes y sostenibles para el cuidado de la salud"
+        },
+        {
+            "title": "Servicios Biomedicos de calidad",
+            "subtitle": "Enfocados en brindarte soluciones integrales para el sector salud"
+        },
+        {
+            "title": "Reparación y Mantenimiento",
+            "subtitle": "Servicios especializados para mantener tus equipos médicos en óptimas condiciones"
+        },
+        {
+            "title": "Venta de Equipos Médicos",
+            "subtitle": "Amplio catálogo de equipos, refacciones y consumibles de calidad"
+        },
+        {
+            "title": "Calibración y Diagnóstico",
+            "subtitle": "Precisión y exactitud en todos nuestros servicios de calibración"
+        },
+        {
+            "title": "Consultoría y Capacitación",
+            "subtitle": "Asesoría especializada en gestión de proyectos para el sector salud"
+        }
+    ]
+}

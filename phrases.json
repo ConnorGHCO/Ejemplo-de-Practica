@@ -1,0 +1,29 @@
+{
+    "phrases": [
+        {
+            "quote": "«Un gramo de prevención vale más que una libra de cura»",
+            "author": "Benjamin Franklin (1706-1790)",
+            "bio": "Científico, político, inventor, impresor y escritor estadounidense, considerado uno de los Padres Fundadores de los Estados Unidos"
+        },
+        {
+            "quote": "«La salud es la mayor riqueza»",
+            "author": "Virgilio (70-19 a.C.)",
+            "bio": "Poeta romano considerado uno de los más importantes de la literatura latina y la historia de la literatura mundial"
+        },
+        {
+            "quote": "«Donde hay vida, hay esperanza»",
+            "author": "Cicerón (106-43 a.C.)",
+            "bio": "Orador, político, filósofo y escritor romano, reconocido como uno de los más importantes intelectuales de la antigüedad clásica"
+        },
+        {
+            "quote": "«El cuidado de la salud es un deber»",
+            "author": "Hipócrates (460-370 a.C.)",
+            "bio": "Médico griego considerado el padre de la medicina moderna, fundador de la escuela de medicina de Cos"
+        },
+        {
+            "quote": "«La medicina es la ciencia de la incertidumbre y el arte de la probabilidad»",
+            "author": "William Osler (1849-1919)",
+            "bio": "Médico canadiense y uno de los fundadores del Johns Hopkins Hospital, considerado el padre de la medicina moderna"
+        }
+    ]
+}
