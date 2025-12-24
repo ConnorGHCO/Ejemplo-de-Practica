@@ -17,6 +17,10 @@
   --titles: #f8f4ea;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -476,10 +480,21 @@ main {
   margin: auto;
   padding: 2rem 0;
   display: grid;
+  gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
   color: var(--titles);
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-container > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
 }
 
 .footer-container .links {
