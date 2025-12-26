@@ -21,6 +21,25 @@ html {
   scroll-behavior: smooth;
 }
 
+.fog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: url('https://www.transparenttextures.com/patterns/green-dust-and-scratches.png');
+  filter: invert(1);
+  filter: blur(.05px);
+  animation: drift 60s infinite linear;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes drift {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-50%, -50%); }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,6 +48,10 @@ html {
   font-weight: 400;
   font-style: normal;
   transition: 0.3s ease-in-out;
+}
+
+body {
+  background-color: var(--bg);
 }
 
 /*
@@ -138,7 +161,6 @@ header {
 }
 
 .sections {
-  background-color: var(--bg);
   width: 100%;
   display: flex;
   justify-content: center;
