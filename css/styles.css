@@ -78,31 +78,83 @@ ESTILOS DE LA BARRA DE NAVEGACION
   width: 80%;
   margin: auto;
   padding: 1.5rem;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .navbar ul {
-  width: 90%;
+  padding: 1rem 0;
+  font-size: 1.2rem;
   margin: auto;
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
-  padding: 10px 0;
-  font-size: 19px;
+  align-items: center;
 }
 
 .navbar ul li {
-  width: 20%;
+  width: 100%;
+  height: 100%;
   text-align: center;
+  align-items: center;
+  align-content: center;
   align-self: center;
 }
 
 .navbar ul li a {
+  width: 100%;
   text-decoration: none;
   color: var(--titles);
   font-weight: bold;
+}
+
+@media screen and (max-width: 550px) {
+
+  .navbar .navstyle {
+    background-color: var(--navbar);
+    box-shadow: var(--shadows);
+    width: 15rem;
+    border-radius: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar .navstyle ul {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .navbar .navstyle ul li {
+    width: 0%;
+    height: 0%;
+    padding: 0rem;
+    background: red;
+    margin: auto;
+  }
+  .navbar .navstyle ul li a {
+    width: 0%;
+    font-size: 0rem;
+  }
+  .navbar .navstyle:hover {
+    width: 80%;
+    border-radius: var(--radius);
+    padding: 1.5rem;
+  }
+  .navbar .navstyle:hover ul {
+    gap: 1rem;
+  }
+  .navbar .navstyle:hover ul li {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+  .navbar .navstyle:hover ul li a {
+    font-size: 1rem;
+    width: 100%;
+  }
 }
 
 /*
