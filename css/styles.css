@@ -114,7 +114,7 @@ INICIO DE LA PAGINA EN SI
 */
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/head.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/head.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -279,9 +279,9 @@ header {
 
 /* dar los bg con opacidad 0 a los 3 div con sus imagenes */
 
-.back1 { background-image: url(img/papeltermico.png); }
-.back2 { background-image: url(img/camilla.png); }
-.back3 { background-image: url(img/pedales.png); }
+.back1 { background-image: url(../img/papeltermico.png); }
+.back2 { background-image: url(../img/camilla.png); }
+.back3 { background-image: url(../img/pedales.png); }
 
 .multiservicios-1 h3 {
   font-size: 1.05rem;
@@ -303,7 +303,7 @@ header {
   width: 100%;
   padding: 0;
   padding-top: 3rem;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/bg3.jpg);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/bg3.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

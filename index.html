@@ -43,11 +43,44 @@
     <meta name="theme-color" content="#2563eb">
     
     <title>Biomedica Multiservicios - Soluciones de Salud Integral</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
+
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+
+        <h1>Cargando . . .</h1>
+
+    </div>
 
     <div class="fog"></div>
 
@@ -192,6 +225,20 @@
             </div>
         </div>
     </footer>
+
+    <script class="loadingjs">
+        window.addEventListener("load", function() {
+            const loader = document.querySelector(".loader");
+            loader.classList.add("loader-finish");
+            //esperar a que termine la animacion, dar un delay y borrar el objeto
+            setTimeout(function() {
+                loader.style.display = "none";
+                loader.remove();
+                //borrar este <script> despues de usarlo
+                document.querySelector(".loadingjs").remove();
+            }, 3000);
+        });
+    </script>
 
 </body>
 </html>
